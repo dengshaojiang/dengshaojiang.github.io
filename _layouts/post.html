@@ -98,6 +98,7 @@ layout: default
                     admin: ['{{site.gitalk.admin}}'],
                     distractionFreeMode: {{site.gitalk.distractionFreeMode}},
                     id: hex_md5(window.location.pathname),
+                    labels: [],
                     });
                     console.log("gittalk id: " + hex_md5(window.location.pathname))
                     gitalk.render('gitalk-container');
