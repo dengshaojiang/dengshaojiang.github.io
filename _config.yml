@@ -63,7 +63,7 @@ kramdown:
 gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: 4d90d73fc1701a2ea1cd                            #生成的clientID
-  clientSecret: c95b1f7d0cf4adde5458ceeac086e8dda061c12f    #生成的clientSecret
+  clientSecret: a439a7a353ce4aebeec1257347c0277bf4ae6c6b    #生成的clientSecret
   repo: dengshaojiang.github.io    #仓库名称
   owner: dengshaojiang    #github用户名
   admin: dengshaojiang
