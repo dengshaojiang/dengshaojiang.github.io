@@ -81,6 +81,25 @@ layout: default
                     {% endif %}
                 </ul>
 
+		<!-- valine 评论 start -->
+		{% if site.valine.enable %}
+		<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+		<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+		<div id="valine_comment"></div>
+		<script type="text/javascript">
+		new Valine({
+		    el: '#valine_comment' ,
+		    notify:false, 
+		    verify:false, 
+		    appId: '{{site.valine.appid}}',
+		    appKey: '{{site.valine.appkey}}',
+		    placeholder: '来啊，快活啊 O(∩_∩)O~~',
+		    path: window.location.pathname, 
+		    avatar:'mm' 
+		});
+		</script>
+		{% endif %}
+		<!-- valine end -->
 
                 <!--Gitalk评论start  -->
                 {% if site.gitalk.enable %}
