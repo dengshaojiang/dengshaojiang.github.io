@@ -1,0 +1,49 @@
+<!-- Language Selector -->
+<!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英文 English </option>
+</select> -->
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+
+    <!--copied from markdown -->
+    <blockquote><p>冰冻三尺 非一日之寒<br>
+    积土成山 非斯须之作</p></blockquote>
+
+    <p>Hey，我是<strong>寻心(邓绍江)</strong>，目前从事云计算行业开发，在北京工作。</p>
+
+    <p>工作、学习之余，我还是一个健身爱好者，同时也非常喜欢拳击。</p>
+
+    <p>这是我的利用 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="https://github.com/qiubaiying/">By</a> 搭建的 个人博客。我在GitHub主页<a href="https://github.com/dengshaojiang">👉GitHub·dengshaojiang</a> 。如果有什么问题，欢迎提出探讨~</p>
+
+    <p></p>
+    
+    <h5>Talks</h5>
+
+    <ul>
+        <li><a href="https://github.com">GitHub</a></li>
+        <li><a href="http://jekyll.com.cn/">jekyll</a></li>
+        <li><a href="https://analytics.google.com/analytics">Google Analytics</a></li>
+    </ul>
+</div>
+
+
+
+<!-- valine 评论 start -->
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<div id="valine_comment"></div>
+<script type="text/javascript">
+new Valine({
+    el: '#valine_comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '{{site.valine.appid}}',
+    appKey: '{{site.valine.appkey}}',
+    placeholder: 'just go go',
+    path: window.location.pathname, 
+    avatar:'mm' 
+});
+</script>
