@@ -28,22 +28,12 @@
     </ul>
 </div>
 
-
-
-<!-- valine 评论 start -->
-
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-<div id="valine_comment"></div>
-<script type="text/javascript">
-new Valine({
-    el: '#valine_comment' ,
-    notify:false, 
-    verify:false, 
-    appId: '{{site.valine.appid}}',
-    appKey: '{{site.valine.appkey}}',
-    placeholder: 'just go go',
-    path: window.location.pathname, 
-    avatar:'mm' 
-});
+<!-- utteranc.es comments start -->
+<script src="https://utteranc.es/client.js"
+        repo="dengshaojiang/dengshaojiang.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>
+
