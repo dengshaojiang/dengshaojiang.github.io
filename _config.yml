@@ -71,9 +71,12 @@ gitalk:
 
 # valine
 valine:
-  enable: true
+  enable: false
   appid: pD4bx2BgQju9JWMG2SiP1Xxh-gzGzoHsz
   appkey: x0beJjewkGpz0NpYhGEttnt9
+
+utterances:
+  enable: true
 
 
 # 统计
