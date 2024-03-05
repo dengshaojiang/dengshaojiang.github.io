@@ -126,6 +126,18 @@ layout: default
                 {% endif %}
                 <!-- Gitalk end -->
 
+		<!-- Utterances comments start  -->
+                {% if site.utterances.enable %}
+                <script src="https://utteranc.es/client.js"
+                        repo="dengshaojiang/dengshaojiang.github.io"
+                        issue-term="pathname"
+                        theme="github-light"
+                        crossorigin="anonymous"
+                        async>
+                </script>
+                {% endif %}
+                <!-- Utterances comments end  -->
+
                 {% if site.disqus_username %}
                 <!-- disqus 评论框 start -->
                 <div class="comment">
