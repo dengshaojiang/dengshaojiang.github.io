@@ -3,6 +3,19 @@ layout: page
 description: "Thinking will not overcome fear but action will."
 ---
 
+<!-- jquery.tagcloud.js -->
+<script>
+    async('/js/jquery.tagcloud.js', function () {
+        $.fn.tagcloud.defaults = {
+            //size: {start: 1, end: 1, unit: 'em'},
+            color: { start: '#bbbbee', end: '#2f93b4' },
+        };
+        $('#tag_cloud a').tagcloud();
+    })
+</script>
+<script src='/js/archive.js '></script>
+
+
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
